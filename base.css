@@ -1,0 +1,220 @@
+/*
+* @Author: LiuMin
+* @Date:   2018-06-06 19:59:39
+* @Last Modified by:   LiuMin
+* @Last Modified time: 2018-06-08 21:24:19
+* @E-mail: Liumindhu@163.com
+*/
+
+/*公共样式*/
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul {
+	margin: 0;
+	padding: 0;
+}
+ul,li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+input,button{
+	border: 0;
+	outline: none;
+}
+body {
+	background-color: #f98a53;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	color: #fff;
+	line-height: 154px;
+	font-weight: 400;
+	font-size: 55px;
+}
+
+.box {
+	width: 562px;
+	height: 836px;
+	box-sizing: border-box;
+	background: url(images/bg.jpg) no-repeat;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+	/*没有设置边框，出现了塌陷的问题*/
+}
+.cam {
+	width: 380px;
+	height: 190px;
+	margin: 0 auto;
+	margin-top: 112px;
+}
+
+input {
+	width: 422px;
+	height: 62px;
+	box-sizing: border-box;
+	font-size: 20px;
+	color: #ccc;
+}
+#txt1 {
+	border-radius:5px 5px 0 0;
+	border-bottom: 1px solid #c0c3c8;
+	background: #fff url(images/icons.png) no-repeat 16px 18px;
+	padding-left: 68px;
+}
+#txt2 {
+	border-radius: 0 0 5px 5px;
+	background: #fff url(images/icons.png) no-repeat 16px -53px;
+	padding-left: 68px;
+}
+
+.submit {
+	margin-top: 16px;
+}
+.submit #sub1 {
+	background-color: #f9671e;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+
+}
+.submit #sub1:hover {
+	background: none;
+	border: 3px solid #f9671e;
+	color: #f9671e;
+}
+
+.button ul {
+	margin-top: 80px;
+}
+.button ul li {
+	margin: 0 auto;
+	margin-bottom: 18px;
+}
+.button ul li a {
+	color: #fff;
+	font-size: 20px;
+	display: inline-block;
+	width: 419px;
+	height: 60px;
+	border-radius: 5px;
+	line-height: 60px;
+}
+
+a.hvr-sweep-to-right {
+  display: inline-block;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  /*backface属性指当元素背面朝向观察者时是否可见*/
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /*-moz-osx-font-smoothing: grayscale;字体平滑 firefox仅在 Mac OS X / macOS 下生效*/
+  position: relative;
+  background: #3b5998 url("images/fb.png") no-repeat 57px 16px ;
+  border-radius:5px;
+  -o-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  z-index: 0;
+}
+a.hvr-sweep-to-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:#354d7d;
+  -webkit-transform: scaleX(0);
+  /*表示x轴缩放为0，既不显示*/
+  transform: scaleX(0);
+  /*转换起点*/
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+   z-index: -1;
+}
+
+a.hvr-sweep-to-right:hover:before, a.hvr-sweep-to-right:focus:before, a.hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+a.hvr-sweep-to-left {
+  display: inline-block;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  /*backface属性指当元素背面朝向观察者时是否可见*/
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /*-moz-osx-font-smoothing: grayscale;字体平滑 firefox仅在 Mac OS X / macOS 下生效*/
+  position: relative;
+  background: #1ab2e8 url("images/fb.png") no-repeat 57px 16px ;
+  border-radius:5px;
+  -o-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  z-index: 0;
+}
+a.hvr-sweep-to-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:#1499c8;
+  -webkit-transform: scaleX(0);
+  /*表示x轴缩放为0，既不显示*/
+  transform: scaleX(0);
+  /*转换起点*/
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+   z-index: -1;
+}
+
+a.hvr-sweep-to-left:hover:before, a.hvr-sweep-to-left:focus:before, a.hvr-sweep-to-left:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.new {
+	color: #917045;
+	width: 419px;
+	height: 21px;
+	margin: 0 auto;
+	margin-top: 64px;
+}
+.new p a {
+	float: left;
+	color: #917045;
+}
+.new .sign {
+	float: right;
+	letter-spacing: 0.1em;
+}
+.new .sign a {
+	float: right;
+}
+.copyright {
+	margin: 48px auto;
+}

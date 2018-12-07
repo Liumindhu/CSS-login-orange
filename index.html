@@ -1,0 +1,79 @@
+<!-- 
+* @Author: LiuMin
+* @Date:   2018-06-06 19:54:53
+* @Last Modified by:   LiuMin
+* @Last Modified time: 2018-06-08 21:23:20
+* @E-mail: Liumindhu@163.com
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="浏览器搜索时旁边显示的内容">
+	<meta name="keywords" content="搜索引擎有关">
+	<link rel="stylesheet" type="text/css" href="base.css">
+	<!-- <link rel="shortcut icon" type="images/x-ico" href="favicon.ico"> -->
+	<title>Signin</title>
+</head>
+<body>
+	<h1>App Sign In Form</h1>
+	<div class="box">
+		<div class="cam">
+			<img src="images/cam.png" width="126" height="92">
+		</div>
+		<form>
+			<input type="text" name="" id="txt1" value="E-mail address">
+			<input type="password" name="" id="txt2" value="Password"><br>
+			<div class="submit">
+				<input type="submit" value="Sign in" id="sub1" >
+			</div>
+			<div class="button">
+				<ul>
+					<li><a href="#" class="hvr-sweep-to-right">
+						Sign in with Facebook
+					</a></li>
+					<li><a href="#" class="hvr-sweep-to-left">
+						Sign in with Twitter
+					</a></li>
+				</ul>
+			</div>
+			<div class="new">
+				<p>
+					<a href="#">Forgot Password</a>
+				</p>
+				<p class="sign">
+					New here?
+					<a href="#">Sign Up</a>
+				</p>
+			</div>
+		</form>
+	</div>
+	<div class="copyright">
+		Copyright © 2015.Company name All rights reserved.
+		<a href="#">Minna</a>
+	</div>
+	<script type="text/javascript">
+		//登陆框 address
+		var txt1 = document.getElementById('txt1');
+		txt1.onfocus = function() {
+			this.value = '';
+		};
+		txt1.onblur = function () {
+			this.value = 'E-mail address';
+		};
+		//密码框 password
+		var txt2 = document.getElementById('txt2');
+		txt2.onfocus = function() {
+			this.value = '';
+		};
+		txt2.onblur = function () {
+			this.value = 'E-mail address';
+		};
+
+
+
+	</script>
+</body>
+</html>
+
